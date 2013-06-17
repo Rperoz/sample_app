@@ -8,9 +8,10 @@ SampleApp::Application.routes.draw do
   resources :microposts, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
       
-  root to: 'static_pages#home'
+  root to: 'sessions#new'
 
-  match '/signup',  to: 'users#new'
+  match '/home',    to: 'static_pages#home'
+  match '/signup',  to: 'sessions#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
       
