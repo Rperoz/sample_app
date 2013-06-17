@@ -1,4 +1,5 @@
-<a href="<%= user_path(current_user) %>">
+<div class="container-fluid">
+<a href="<%= user_path(current_user) %>" >
   <%= gravatar_for current_user, size: 52 %>
 </a>
 <h1>
@@ -10,3 +11,4 @@
 <span>
   <%= pluralize(current_user.microposts.count, "micropost") %>
 </span>
+</div>
