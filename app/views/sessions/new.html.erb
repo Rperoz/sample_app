@@ -9,11 +9,11 @@
     <%= form_for(:session, url: sessions_path) do |f| %>
 
       <%= f.label :email %>  
-      <%= f.text_field :email, class: "span8 fluid" %> <small>guest@mail.com</small>
+      <%= f.text_field :email, class: "span6 fluid" %> <small>guest@mail.com</small>
 	
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: "span8 fluid" %>  <small>guest</small>
+      <%= f.password_field :password, class: "span6 fluid" %>  <small>guest</small>
 	 <div>
         <%= f.submit "Sign in", class: "btn btn-large btn-info inline" %>
         <% end %>
